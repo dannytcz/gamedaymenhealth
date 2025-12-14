@@ -5,20 +5,16 @@
 
 alert("Quiz JS loaded");
 
+// ---- DOMAIN LOCK ----
+// var allowedRoot = "gmndegagency.com";
 
-
-(function () {
-  // ---- DOMAIN LOCK ----
-  // Only run on *.grndedagency.com
-  var allowedRoot = "grndedagency.com";
-
-  if (!window.location.hostname.endsWith(allowedRoot)) {
-    console.warn(
-      "Quiz card script disabled for this domain:",
-      window.location.hostname
-    );
-    return;
-  }
+// if (!window.location.hostname.endsWith(allowedRoot)) {
+//   console.warn(
+//     "Quiz card script disabled for this domain:",
+//     window.location.hostname
+//   );
+//   return;
+// }
 
   // ---- MAIN LOGIC ----
   window.addEventListener("load", function () {
@@ -40,4 +36,5 @@ alert("Quiz JS loaded");
     });
   });
 })();
+
 
