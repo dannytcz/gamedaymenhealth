@@ -3,6 +3,10 @@
 // Licensed to: grndedagency.com
 // =========================
 
+alert("Quiz JS loaded");
+
+
+
 (function () {
   // ---- DOMAIN LOCK ----
   // Only run on *.grndedagency.com
@@ -36,3 +40,4 @@
     });
   });
 })();
+
